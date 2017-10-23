@@ -1,0 +1,417 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+* {
+  outline: none;
+  background: #E6E6DC;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 768px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content {
+  padding-top: 0;
+}
+
+section {
+  text-align: center;
+}
+section .section-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+}
+
+mark {
+  background: black;
+  color: gold;
+}
+
+.heading-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.heading-content .header-title {
+  margin: 0 0 20px 0;
+  font-family: "Lobster", cursive;
+  font-size: 100px;
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+.heading-content #nav .responsive-menu {
+  display: none;
+}
+.heading-content #nav .nav-bar {
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.heading-content #nav .nav-bar .nav-bar-item .nav-bar-item-btn {
+  padding: 10px 25px;
+  border: 1px solid #999;
+  border-bottom: 5px solid #999;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+.heading-content #nav .nav-bar .nav-bar-item .nav-bar-item-btn.active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  border-bottom: 3px solid #999;
+  background: black;
+  color: gold;
+}
+.heading-content #nav .nav-bar .nav-bar-item:first-child .nav-bar-item-btn {
+  border-radius: 10px 0 0 10px;
+}
+.heading-content #nav .nav-bar .nav-bar-item:last-child .nav-bar-item-btn {
+  border-radius: 0 10px 10px 0;
+}
+
+.about-introduce {
+  text-align: center;
+}
+.about-introduce .about-image {
+  width: 40%;
+}
+.about-introduce .about-image .avatar {
+  width: 100%;
+  border-radius: 50%;
+}
+.about-introduce .about-introduce-content {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  font-family: "Oswald", sans-serif;
+}
+.about-introduce .about-introduce-content p:first-child {
+  font-size: 40px;
+}
+.about-introduce .about-introduce-content p {
+  margin: 0 0 20px 0;
+  font-size: 30px;
+}
+
+.portfolio-content .wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.portfolio-content .wrapper .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  height: 250px;
+  background: black;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-content .wrapper .card .card-image {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 1;
+}
+.portfolio-content .wrapper .card .card-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio-content .wrapper .card .card-overlay .card-overlay-title {
+  background: transparent;
+}
+.portfolio-content .wrapper .card .card-overlay .card-overlay-title a {
+  text-decoration: none;
+  font-size: 30px;
+  color: gold;
+  font-famiy: "Oswald", sans-serif;
+}
+.portfolio-content .wrapper .card .card-overlay .card-overlay-text {
+  background: transparent;
+  ont-size: 20px;
+  color: #E6E6DC;
+  font-famiy: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.portfolio-content .wrapper .card:hover .card-image {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.portfolio-content .wrapper .card:hover .card-overlay {
+  opacity: 1;
+}
+
+.skill-content .wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skill-content .wrapper .skill-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 220px;
+          flex: 1 1 220px;
+}
+.skill-content .wrapper .skill-item .icon {
+  font-size: 100px;
+}
+.skill-content .wrapper .skill-item .skill-item-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+}
+.skill-content .tools {
+  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skill-content .tools .tool-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.skill-content .tools .tool-icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact-form {
+  position: relative;
+}
+.contact-form .form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-form .form .input {
+  width: 100%;
+  margin: 0;
+  background: white;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.contact-form .form textarea.input {
+  resize: vertical;
+  min-height: 100px;
+}
+.contact-form .form .submit-btn {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  letter-spacing: 4px;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+.contact-form .arrow {
+  top: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  position: relative;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+}
+.contact-form .social-contact {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+.contact-form .social-contact .social-contact-item {
+  font-size: 30px;
+  color: black;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 799px) {
+  .container {
+    width: 100%;
+  }
+
+  .skill-content .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skill-content .wrapper .skill-item {
+    margin: 0;
+  }
+  .skill-content .tools {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-introduce .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-introduce .wrapper .about-introduce-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media only screen and (max-width: 678px) {
+  .about-introduce .wrapper .about-introduce-content p {
+    font-size: 28px;
+  }
+
+  .contact-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .contact-form .form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .skill-content .tools .tool-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #main {
+    margin-top: 50px;
+  }
+
+  .heading-content {
+    padding: 0;
+    background: black;
+  }
+  .heading-content .header-title {
+    display: none;
+  }
+  .heading-content #nav .responsive-menu {
+    width: 100%;
+    padding: 10px 25px;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: #E6E6DC;
+    background: black;
+  }
+  .heading-content #nav .nav-bar {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .heading-content #nav .nav-bar .nav-bar-item .nav-bar-item-btn {
+    background: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #E6E6DC;
+  }
+  .heading-content #nav .nav-bar .nav-bar-item .nav-bar-item-btn.active {
+    border-bottom: none;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    color: gold;
+  }
+  .heading-content #nav .nav-bar .nav-bar-item:first-child .nav-bar-item-btn, .heading-content #nav .nav-bar .nav-bar-item:last-child .nav-bar-item-btn {
+    border-radius: 0;
+  }
+
+  .about-introduce .about-introduce-content {
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+
+  .skill-content .tools {
+    display: none;
+  }
+
+  .portfolio-content .wrapper .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    height: 400px;
+  }
+
+  .contact-form {
+    margin: 0;
+    width: 100%;
+  }
+}
